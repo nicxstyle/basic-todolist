@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           background-color:aqua;
+       }
+       h1{
+           font-size: 35px;
+           color:blue;
+           background-color: white;
+                  }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 500px;
+        }
+        .title{
+            background-color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .aramakutusu{
+            width: 410px;
+            height: 30px;
+            background-color: white;
+            border: 2px solid red;
+            border-radius: 30px;
+            padding: 5px 40px;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+        .aramakutusu:focus{
+            outline: none;
+        }
+        .isler{
+            list-style: none;
+            height: auto;
+
+        }
+        .isler li{
+            background-color: white;
+            width: 450px;
+            
+            text-align: center;
+            padding: 15px 10px;
+            margin-bottom: 5px;
+            border-radius: 20px;
+            color: blue;
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .close{
+            cursor: pointer;
+            color: red;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .filtre{
+            display: none  !important;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="title"> 
+        <h1>To-Do List</h1>
+    </div>
+
+    <div class="container">
+       
+        <input type="text" name="arama" class="aramakutusu" placeholder="İş ara">
+
+        <ul class="isler">
+            <li>Spor Yap <span class="close">X</span></li>
+            <li>Js Öğren <span class="close">X</span></li>
+        </ul>
+
+
+        <input type="text" name="isekle" class="ekle aramakutusu" placeholder="İş Ekle">
+    </div>
+</body>
+
+<script src="todo.js"></script>
+</html>
